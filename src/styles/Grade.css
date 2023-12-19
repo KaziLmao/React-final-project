@@ -1,0 +1,23 @@
+.grading-container{
+    display: flex;
+    border: 2px solid #005555;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.grading-title{
+    font-size: 18px;
+}
+
+.dislikes-container, .likes-container{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.dislikes-container button, .likes-container button{
+    padding: 6px 10px 3px 9px;
+    font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+}

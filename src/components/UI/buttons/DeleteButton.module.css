@@ -1,0 +1,29 @@
+.mainBtn {
+    font-weight: 500;
+    color: #ffffff;
+    display:inline-block;
+    box-sizing: border-box;
+    padding: .5em;
+    border: 1px solid black;
+    background-color: #870014;
+    border-radius: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.mainBtn:hover {
+    background-color: #a5002d;
+}
+
+.mainBtn:active {
+    background-color: #6e001e;
+}
+
+.mainBtn:disabled,
+.mainBtn[disabled]{
+    background-color: #673b3b;
+    cursor: default;
+}

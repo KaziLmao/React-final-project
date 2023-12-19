@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: .2px;
+}
+
+li, a {
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: #ebebeb;
+}
+
+header {
+    background-color: rgba(0, 175, 190, 0.2);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.header-container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-btn-link {
+    text-transform: capitalize;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+}
+
+.app-name{
+    font-size: 24px;
+}
+
+.app-name a{
+    font-weight: 600;
+}
+
+.header-nav-links {
+    list-style: none;
+}
+
+.header-nav-links li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.content-container{
+    max-width: 80%;
+    min-width: 50%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.post-form{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.add-post-btn{
+    margin: 10px 50px;
+}
+
+.add-post-btn button{
+    background-color: rgba(0, 175, 190, 0.8);
+}
+
+.add-post-btn button:hover{
+    background-color: rgb(0, 175, 190);
+}
+
+.add-post-btn button:active{
+    background-color: rgba(0, 175, 190, 0.6);
+}
+
+.posts-title{
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.post{
+    background-color: #232323;
+    display: flex;
+    padding: 1.5em;
+    margin-top: 1em;
+    border: 2px solid #005555;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.post-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.post-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.post-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.post-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.post-enter-active,
+.post-exit-active {
+    transition: opacity 400ms, transform 400ms;
+}
+
+.post__list__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__content{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+.post__content__container{
+    max-width: 100%;
+}
+
+.post__title{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__list__container div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post__title span {
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.post__body {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.post__btns__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post__btns{
+    display: flex;
+    border: 2px solid #005555;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.post__btns button{
+    padding: 5px 10px 4px 9px;
+    margin: 30px 5px;
+    max-height: 39px;
+}
+
+.pages-div{
+    display: flex;
+    justify-content:center;
+    margin: 30px 0;
+}
+
+.page{
+    padding: .5em 1em;
+    border: 2px solid rgba(0, 165, 45, 0.5);
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.page:active{
+    border: 2px solid #00ff45;
+}
+
+.page-current{
+    font-weight: bold;
+    background-color: rgba(0, 165, 45, 0.8);
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-col {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    padding: 2em 3em;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.footer-nav-links {
+    text-transform: none;
+    font-size: 1em;
+}
+
+.footer-text{
+    padding: 20px 0;
+}
+
+.footer-links-list {
+    padding: 10px 0;
+}
